@@ -16,7 +16,7 @@ fn firstFunction() {
 
 
 fn nth(&mut self, n: usize) -> Option<String> {
-    marvelMovies = ["The Avengers","The Avengers: Age of Ultron","The Avengers: Civil War","The Avengers: Infinity War","The Avengers: Endgame","Tom Holland's Spiderman Trilogy"]
+    marvelMovies = ["The Avengers","The Avengers: Age of Ultron","The Avengers: Civil War","The Avengers: Infinity War","The Avengers: Endgame","Spiderman Homecoming Trilogy"]
     self.inner.next() 
     self.inner.next() 
     self.inner.next()
