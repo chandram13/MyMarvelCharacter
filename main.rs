@@ -26,99 +26,90 @@ fn nth(&mut self, n: usize) -> Option<String> {
 }
 
     // matching expression technique (Rust)
-    fn operate(operator: String, first_name: str, last_name: str) -> str {
+    fn operate(character_name: String, character_power: str, character_weakness: str) -> str {
         match operator {
-            '8:00' => first_name + last_name,
-            '8:30' => first_name + last_name,
-            '9:00' => first_name + last_name,
-            '9:30' => first_name + last_name,
-            '10:00' => first_name + last_name,
-            '10:30' => first_name + last_name,
-            '11:00' => first_name + last_name,
-            '11:30' => first_name + last_name,
-            '1:00' => first_name + last_name,
-            '1:30' => first_name + last_name,
-            '2:00' => first_name + last_name,
-            '2:30' => first_name + last_name,
-            '3:00' => first_name + last_name,
-            '4:00' => first_name + last_name,
-            '4:30' => first_name + last_name,
-            '0:00' => panic!("Invalid time given.")
+            'Iron Man' => character_name + character_power + character_weakness,
+            'Captain America' => character_name + character_power + character_weakness,
+            'Hulk' => character_name + character_power + character_weakness,
+            'Thor' => character_name + character_power + character_weakness,
+            'Black Widow' => character_name + character_power + character_weakness,
+            'Hawkeye' => character_name + character_power + character_weakness,
+            'War Machine' => character_name + character_power + character_weakness,
+            'Ant-Man' => character_name + character_power + character_weakness,
+            'Doctor Strange' => character_name + character_power + character_weakness,
+            'Black Panther' => character_name + character_power + character_weakness,
+            'Captain Marvel' => character_name + character_power + character_weakness,
+            'Spider-Man' => character_name + character_power + character_weakness,
+            'Gamora' => character_name + character_power + character_weakness,
+            'Wanda' => character_name + character_power + character_weakness,
+            'Star-Lord' => character_name + character_power + character_weakness
+            '[a-Z]' => panic!("Invalid Marvel character given.")
         }
         }
 
-    struct NearbyHospital{
-        givenbypatientAddress: givenbypatientAddress<u8>,
-        givenbyZipcode: givenbyAddress<u8>,
-        givenbyhospitalGroup: givenbyhospitalGroup<u8>,
-        givenbypatientPlan: givenbypatientPlan<u8>,
-        askpatientFacility: askpatientFacility<u8>
-    }
-    let nearby_Hospital = NearbyHospital {givenbypatientAddress: str, givenbyZipcode: f32, givenbyhospitalGroup: str, givenbypatientPlan: str, askpatientFacility: str};
 
-    impl String {
-        fn from(s: &str) -> Self{
-            f32 {
-                vec: Vec::from(s.phone_number())
-                vec: Vec::from(s.height())
-                vec: Vec::from(s.weight())
-            }
-        }
-    }
-
-    enum AskedQuestions{
-        currentCondition,
-        anyinfluenzaSymptoms,
-        doespatientSmoke,
-        doespatientDrink,
-        takingMedications,
-        requiredVaccinations,
-        upcomingAppointment}
+    enum MarvelCharacteristics{
+        characterTrait,
+        personalityType,}
     
-        fn currentAppointment -> Result<(), askedQuestions> {
-            if currentCondition == "ok"{
-                Err(AskedQuestions::("Maintain a healthy diet and exercise frequently.".to_string()))
+        fn marvelCharacter -> Result<(), marvelConditions> {
+            if characterTrait == "noble"{
+                Err(MarvelConditions::("This trait identifies as Steve Rodgers aka Captain America.".to_string()))
             }
-            else if currentConditon == "not satisfied"{
-                Err(AskedQuestions::"What current symptoms are you feeling, is it physically or mental?".to_string())
+            else if characterTrait == "loyal"{
+                Err(MarvelConditions::"This trait identifies as Natasha Romanoff aka Black Widow ".to_string())
             }
-            if anyinfluenzaSymptoms == "None"{
-                Err(AskedQuestions::"Maintain your health by not drinking or eating too much consuming cold food or substances.".to_string())
+            else if characterTrait == "dedicated"{
+                Err(MarvelConditions::"This trait identifies as Tony Stark aka Iron Man".to_string())
             }
-            else if anyinfluenzaSymptoms == "Aware of"{
-                Err(AskedQuestions::"Are you feeling the following: coughing, wheezing, feeling feverish, or sneezing?".to_string())
+            else if characterTrait == "compassionate"{
+                Err(MarvelConditions::"This trait identifies as T Challa aka the Black Panther".to_string())
             }
-            if doespatientSmoke == "No"{
-                Err(AskedQuestions::"That's good news. Maintain your healthy by eating clean and regulate your sugar levels.".to_string())
+            else if characterTrait == "supportive"{
+                Err(MarvelConditions::"This trait identifies as Thor aka the god of thunder".to_string())
             }
-            else if doespatientSmoke == "Yes"{
-                Err(AskedQuestions::"How often do you smoke? Do you characterize yourself as a casual or heavy smoker. Get help by quitting cold turkey and use nicotine patches.".to_string())
+            else if characterTrait == "supportive"{
+                Err(MarvelConditions::"This trait identifies as Thor aka the god of thunder".to_string())
             }
-            if doespatientDrink == "No"{
-                Err(AskedQuestions::"That's good news. Maintain your healthy by eating clean and regulate your sugar levels.".to_string())
+            else if characterTrait == "brave"{
+                Err(MarvelConditions::"This trait identifies as Peter Parker aka The Spider Man.".to_string())
             }
-            else if doespatientDrink == "Yes"{
-                Err(AskedQuestions::"How often do you drink? Do you characterize yourself as a casual or heavy drinker? Drinking is normal in moderation, however, regulate your intake.".to_string())
+            else if characterTrait == "independent"{
+                Err(MarvelConditions::"This trait identifies as Carol Danvers aka Ms. Marvel.".to_string())
             }
-            if takingMedications = true{
-                Err(AskedQuestions::"Are you taking your medications daily? Any irregular symptoms or other signs to be worried about?".to_string())
+            else if characterTrait == "tenacious"{
+                Err(MarvelConditions::"This trait identifies as Wanda Maximoff aka the Scarlet Witch.".to_string())
             }
-            else if takingMedications = false{
-                Err(AskedQuestions::"It's good to hear that you're healthy. Do you need to be prescribed anything for any current symptoms you might be experiecing. If not, I'll just measure your blood sugar levels and cholesterol.".to_string())
+            else if characterTrait == "selfless"{
+                Err(MarvelConditions::"This trait identifies as Bruce Banner aka the Hulk.".to_string())
             }
-            if requiredVaccinations == "Up to date"{
-                Err(AskedQuestions::"Your vaccinations are all done, in doing so, you have prevented any known diseases to be spread.".to_string())
+            if personalityType == "ESTJ"{
+                Err(MarvelConditions::"This personality type identifies as the Iron Man".to_string())
             }
-            else if requiredVacinations == "Not up to date"{
-                Err(AskedQuestions::"Your vaccinations are not all done, we will schedule an appointment or more to make sure you're vaccinated.".to_string())
+            else if personalityType == "ISFJ"{
+                Err(MarvelConditions::"This personality type identifies as Captain America.".to_string())
             }
-            if upcomingAppointment = true{
-                Err(AskedQuestions::"There is an upcoming appointment listed on your records. Do you know the details of this appointment?".to_string())
+            else if personalityType == "ESFP"{
+                Err(MarvelConditions::"This personality type identifies as Ms. Marvel.".to_string())
             }
-            else if upcomingAppointment = false{
-                Err(AskedQuestions::"No appointments are coming up it appears. We will continue your appointment. Lastly, please make sure to maintain healthy habits".to_string())
+            else if personalityType == "ISTJ"{
+                Err(MarvelConditions::"This personality type identifies as Hawkeye.".to_string())
+            }
+            else if personalityType == "INTP"{
+                Err(MarvelConditions::"This personality type identifies as the Hulk.".to_string())
+            }
+            else if personalityType == "ESFP"{
+                Err(MarvelConditions::"This personality type identifies as Thor.".to_string())   
+            } 
+            else if personalityType == "ESTP-T" || else if personality type == "ESTP-A{
+                Err(MarvelConditions::"This personality type identifies as Ant-Man.".to_string()) 
+                Err(MarvelConditions::"This personality type identifies as Rocket.".to_string())   
+            } 
+            else if personalityType == "INFJ"{
+                Err(MarvelConditions::"This personality type identifies as Black Widow.".to_string())   
+            } 
             } else{
-                Err(AskedQuestions::"The doctor is busy with another patient or there are too many patients causing a longer wait time.".to_string())
+                Err(AskedQuestions::"The given Marvel character is not listed or has given an invalid input.".to_string())
             }
 
         }
@@ -127,10 +118,10 @@ fn nth(&mut self, n: usize) -> Option<String> {
 
 
 
-    fn output(character_name: String, operator: char, character_power: String, result: f32) -> String {
-        format("{} {} {} = {}", first_name, operator, last_name})
-        format("{} = {}",currentAppointment)
-        println!("{:?}",output(first_name, operator, last_name, result));
-        println!("{:?}",output(currentAppointment));
+    fn output(character_name: String, character_power: String, character_weakness: String, result: str) -> String {
+        format("{} {} {} = {}", character_name, character_power, character_weakness})
+        format("{} = {}",MarvelCharacteristics)
+        println!("{:?}",output(character_name, character_power, character_weakness, result));
+        println!("{:?}",output(MarvelCharacteristics));
     }
 }
